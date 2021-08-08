@@ -1,16 +1,16 @@
-# simgraph
 
 README
 
-# Step 1: Geometry creation includes conversion of the 3D vascular geometry into a weighted graph.
+# Geometry creation:
+Includes conversion of the 3D vascular geometry into a weighted graph.
 
+Geometry requirement for solving the transport physics: The format for specifying topology information of the graph is found in input.xlsx.
+The specifics of the column fields provided in the excel sheet is detailed below.
 
-Geometry requirement for solving the transport physics:
-The format for specifying topology information of the graph is found in input.xlsx. The specifics of the column fields
-provided in the excel sheet is detailed below.
+*****************************************************
 
-
-# Original graph geomerty: Represented as a graph formed by nodes and edges (or vessel segments). Nodes represent terminal ends or junctions at which
+Step 1:   Original graph geomerty:
+Represented as a graph formed by nodes and edges (or vessel segments). Nodes represent terminal ends or junctions at which
 n-furcation of blood vessels occur. The edges are oriented in the flow direction and each is formed by a tail (t) and head (h) node. The
 inputs required to form the weighted graph are:  
  
@@ -30,7 +30,9 @@ nodes - index/numbering of the graph nodes
 hNode - inlet node at which fluid enters the domain (e.g. 1)	
 tNode - outlet node at which fluid leaves the domain (e.g. 4)	
 
-# Discretized graph domain:
+*****************************************************
+
+Step 2: Discretized graph domain:
 
 1----5----2---6---7---3----4
 
