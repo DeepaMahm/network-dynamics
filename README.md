@@ -13,8 +13,12 @@ Represented as a graph formed by nodes and edges (or vessel segments). Nodes rep
 n-furcation of blood vessels occur. The edges are oriented in the flow direction and each is formed by a tail (t) and head (h) node. The
 inputs required to form the weighted graph are:  
  
-1D example: <br />
-1--------2---------3----4  <br />
+Example: <br />
+![A test image](test2.png)
+
+<!-- <img src="https://github.com/DeepaMahm/simgraph/blob/main/test2.png" width="700"> -->
+
+1--------2---------3---------54  <br />
 Here, 1, 2, 3, and 4 are the numbering of the nodes. (1,2), (2,3), (3,4) are the edges.
 
 The following 11 fileds are the column headers present in the spreadsheet. These fileds are extracted from the skeletonized
