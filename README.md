@@ -1,7 +1,7 @@
 
-README
+# README
 
-# Geometry creation:
+## Geometry creation:
 Includes the steps involved in conversion of the 3D vascular geometry into a weighted graph.
 
 Geometry requirement for solving the transport physics: The format for specifying topology information of the graph is found in input.xlsx.
@@ -16,7 +16,7 @@ inputs required to form the weighted graph are:
  
 1D example: <br />
 1--------2---------3----4  <br />
-Here, 1,2,3, and 4 are the numbering of the nodes. (1,2), (2,3), (3,4) are the edges.
+Here, 1, 2, 3, and 4 are the numbering of the nodes. (1,2), (2,3), (3,4) are the edges.
 
 The following 11 fileds are the column headers present in the spreadsheet. These fileds are extracted from the skeletonized
 version of the vascular geometry.<br />
