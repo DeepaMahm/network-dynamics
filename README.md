@@ -18,10 +18,9 @@ Example: <br />
 
 <!-- <img src="https://github.com/DeepaMahm/simgraph/blob/main/test2.png" width="700"> -->
 
-1--------2---------3---------54  <br />
-Here, 1, 2, 3, and 4 are the numbering of the nodes. (1,2), (2,3), (3,4) are the edges.
+Here, 1, 2, 3, and 4 are the nodes labels. (1,2), (2,3), (3,4) are the edges.
 
-The following 11 fileds are the column headers present in the spreadsheet. These fileds are extracted from the skeletonized
+The following 11 fileds are the column headers present in the spreadsheet. These values in these fileds are extracted from the skeletonized
 version of the vascular geometry.<br />
 * t - tail <br />
 * h - head	 <br />
@@ -31,7 +30,7 @@ version of the vascular geometry.<br />
 * xpos -	x-coordinate of a node <br />
 * ypos - 	y-coordinate of a node <br />
 * zpos -  z-coordinate of a node	 <br />
-* nodes - index/numbering of the graph nodes  <br /> 	
+* nodes(index) - index/numbering of the graph nodes  <br /> 	
 * hNode - inlet node at which fluid enters the domain (e.g. 1)  <br />	
 * tNode - outlet node at which fluid leaves the domain (e.g. 4)	 <br />
 
@@ -39,15 +38,14 @@ version of the vascular geometry.<br />
 
 #### Step 2: Discretizing graph domain
 
-1----5----2---6---7---3----4
-
-
-* segment_i_nnode	index - no of intermediate(i) nodes between each head and tail nodes in the a given segment.  <br />
 * nodes_mesh - index/numbering of nodes in the discretized domain  <br />
 * xpos_mesh - x-coordinate of nodes in the discretized domain	 <br />
 * ypos_mesh - y-coordinate of nodes in the discretized domain	 <br />
 * zpos_mesh - z-coordinate of nodes in the discretized domain <br />
-* *volume_ratio (computed internally, not user defined)*	 <br />
+* segment_i_nnode	- no of intermediate(i) nodes between each head and tail nodes in the a given segment. e.g if 2 nodes
+ (labelled 5 and 6) are added between (1, 2) segment_i_nnode=2. <br />
+
+* *volume_ratio and other extras (computed internally, not user defined)*	 <br />
 
 For carring out simulations with new vasculature, add a new workbook and populate the topology information corresponding to the 11 fields mentioned in Step 1.
 To generate the data of the column fields mentioned in Step 2, use read_mesh.py for domain discretization in Gmsh.
