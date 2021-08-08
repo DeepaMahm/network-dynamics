@@ -44,5 +44,13 @@ ypos_mesh - y-coordinate of nodes in the discretized domain	 <br />
 zpos_mesh - z-coordinate of nodes in the discretized domain <br />
 volume_ratio (computed internally, ignore)	 <br />
 
+For carring out simulations with new datasets, populate the column fields 
+Domain discretization is carried out in Gmsh.
+1. Run extract_subgraph to retain just one inlet and one outlet in the user-defined graph
+2. Update the network topology in input.xlsx
+3. Run read_mesh.py to generate the coordinates of the mesh elements
+4. Update the pos_mesh coordinates in input.xlsx
+5. Run static and dynamic simulations
+
 *****************************************************
 
