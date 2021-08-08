@@ -47,10 +47,10 @@ volume_ratio (computed internally, ignore)	 <br />
 For carring out simulations with new datasets, populate the column fields 
 Domain discretization is carried out in Gmsh.
 1. Run extract_subgraph to retain just one inlet and one outlet in the user-defined graph
-2. Update the network topology in input.xlsx
-3. Run read_mesh.py to generate the coordinates of the mesh elements
+2. Update the network topology in input.xlsx by adding a new workbook
+3. Run read_mesh.py to generate the coordinates of the mesh elements by specifying the (minimum, maximum) bounds of element size. 
 4. Update the pos_mesh coordinates in input.xlsx
-5. Run static and dynamic simulations
+5. The geomerty is ready; run static and dynamic simulations
 
 *****************************************************
 
