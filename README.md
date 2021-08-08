@@ -1,15 +1,14 @@
 
 # README
 
-## Geometry creation:
-Includes the steps involved in conversion of the 3D vascular geometry into a weighted graph.
+## Creating the computational domain
 
-Geometry requirement for solving the transport physics: The format for specifying topology information of the graph is found in input.xlsx.
+Geometry required for solving the transport physics involves conversion of the 3D vascular geometry into a weighted graph. The format for specifying topology information of the graph is found in input.xlsx.
 The specifics of the column fields provided in the excel sheet is detailed below.
 
 *****************************************************
 
-#### Step 1:   Original graph geomerty:
+#### Step 1:   Original graph geomerty
 Represented as a graph formed by nodes and edges (or vessel segments). Nodes represent terminal ends or junctions at which
 n-furcation of blood vessels occur. The edges are oriented in the flow direction and each is formed by a tail (t) and head (h) node. The
 inputs required to form the weighted graph are:  
@@ -34,7 +33,7 @@ version of the vascular geometry.<br />
 
 *****************************************************
 
-#### Step 2: Discretized graph domain:
+#### Step 2: Discretizing graph domain
 
 1----5----2---6---7---3----4
 
