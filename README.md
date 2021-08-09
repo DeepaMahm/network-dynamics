@@ -80,7 +80,7 @@ each volume element like a continuous stirred tank reactor (CSTR). Convection , 
 
 Output files:
 
-* File naming convention for mat files.*
+*File naming convention for mat files.*
 
 e.g test1_default_bc1_v1_c2
 
@@ -101,3 +101,6 @@ e.g.
 * 	eq (convection + diffusion + reaction - blood vessel and cell have equal volumes): glc_ext_comsol_eq 
 * 	eqfull (convection + diffusion + reaction - blood vessel and cell have equal volumes): glc_ext_comsol_eqfull 
 *  full (convection + diffusion + reaction - blood vessel and cell have unequal volumes): glc_ext_comsol_full 
+
+
+All the 3D visulations are created via [manuscript_figures.py](ttps://github.com/DeepaMahm/simgraph/blob/main/postprocessing/manuscript_figures.py).
