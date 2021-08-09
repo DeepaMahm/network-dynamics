@@ -14,7 +14,7 @@ n-furcation of blood vessels occur. The edges are oriented in the flow direction
 inputs required to form the weighted graph are:  
  
 Example: <br />
-![A test image](test2.png)
+![A test image](/docs/images/test2.png)
 
 <!-- <img src="https://github.com/DeepaMahm/simgraph/blob/main/test2.png" width="700"> -->
 
