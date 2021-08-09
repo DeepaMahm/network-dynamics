@@ -106,13 +106,13 @@ e.g.
 The 3D visualization are created via [manuscript_figures.py](https://github.com/DeepaMahm/simgraph/blob/main/postprocessing/manuscript_figures.py).
 
 
-#### Installation
+#### download and execution
 
 ```
-# downloading and accessing simgraph
 git clone https://github.com/deepamahm/simgraph.git
 cd simgraph/main
 main.exe input.xlsx settings_utils.m
 ```
-main.exe ..\filepath\input.xlsx ..\filepath\settings_utils.m
+
+*main.exe ..\filepath\input.xlsx ..\filepath\settings_utils.m*
 
