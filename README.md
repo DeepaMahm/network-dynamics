@@ -1,7 +1,7 @@
 
 # README
 
-## Preparing the input geometry
+## Preprocessing: Preparing the input geometry
 
 Geometry required for solving the transport physics involves conversion of the 3D vascular geometry into a weighted graph. The format for specifying topology information of the graph is found in input.xlsx.
 The specifics of the column fields provided in the excel sheet is detailed below.
@@ -57,8 +57,8 @@ To generate the data of the column fields mentioned in Step 2, use read_mesh.py 
 1. The geomerty is ready; run static and dynamic simulations
 
 *****************************************************
-## Setting up the computational domain for multiphysics simulation
-#### Step 3: Setting up the computational domain and simulation of static flow fields and tr
+## Simulation
+#### Step 3: Setting up the computational domain for multiphysics simulation
 *In the executable Mathematical formulation of the transport dynamics and the steps*
 Each node in the blood vessel that is modelled is an approximation of a volume element. The volume is computed considering a cylindrial geometry. The height of the cylinder(l) is equal to mesh size. The diameter of the cylinder (d) is equal to the diameter of the blood vessel that is modelled. The blood vessel volume element is surrounded by a monolayer of β-cell mass. The volum of this monolayer is approximated by the volume of a hollow cylinder also referred to as donut volume.  The idea is to treat 
 each volume element like a continuous stirred tank reactor (CSTR). Convection , diffusion and reaction is modeled by writing mole balance equation for each volume element. The reaction nodes are highlighted in  green on the left image. Coupling between the donut element and the cylindrical volume element in the blood occurs at the green colored nodes. The bifurcation and trifurcation junctions are treated as spherical volume elements.
@@ -68,6 +68,12 @@ each volume element like a continuous stirred tank reactor (CSTR). Convection , 
 
 ![image](https://user-images.githubusercontent.com/29662579/128639317-29a7b18b-4b1b-433a-b042-53aadef1e4bc.png)
 
+#### Step 4: Simulation of static flow fields and transient concentration dynamics 
+
+
+
+## Postprocessing
+
 
 Output files:
 
@@ -76,9 +82,6 @@ Output files:
 e.g test1_default_bc1_v1_c2
 
 {graph}_{mesh}_{boundary condition}_{no. of species in blood vessel}_{no. of species in cell}
-
-
-## Postprocessing
 
 
 Naming convection used: 
