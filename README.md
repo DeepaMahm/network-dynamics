@@ -58,8 +58,9 @@ To generate the data of the column fields mentioned in Step 2, use read_mesh.py 
 
 *****************************************************
 ## Simulation
+* Mathematical formulation and simulation is carried out in [main.exe](https://github.com/DeepaMahm/simgraph/blob/main/main/main.exe)*
+
 #### Step 3: Setting up the computational domain for multiphysics simulation
-*[main.exe](https://github.com/DeepaMahm/simgraph/blob/main/main/main.exe) Mathematical formulation of the transport dynamics and the steps*
 Each node in the blood vessel that is modelled is an approximation of a volume element. The volume is computed considering a cylindrial geometry. The height of the cylinder(l) is equal to mesh size. The diameter of the cylinder (d) is equal to the diameter of the blood vessel that is modelled. The blood vessel volume element is surrounded by a monolayer of β-cell mass. The volum of this monolayer is approximated by the volume of a hollow cylinder also referred to as donut volume.  The idea is to treat 
 each volume element like a continuous stirred tank reactor (CSTR). Convection , diffusion and reaction is modeled by writing mole balance equation for each volume element. The reaction nodes are highlighted in  green on the left image. Coupling between the donut element and the cylindrical volume element in the blood occurs at the green colored nodes. The bifurcation and trifurcation junctions are treated as spherical volume elements.
  
