@@ -3,7 +3,7 @@
 
 ## Preprocessing: Preparing the input geometry
 
-Geometry required for solving the transport physics involves conversion of the 3D vascular geometry into a weighted graph. The format for specifying topology information of the graph is found in input.xlsx.
+Geometry required for solving the transport physics involves conversion of the 3D vascular geometry into a weighted graph. The format for specifying topology information of the graph is found in [input.xlsx](https://github.com/DeepaMahm/simgraph/tree/main/input).
 The specifics of the column fields provided in the excel sheet is detailed below.
 
 *****************************************************
