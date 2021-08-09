@@ -68,3 +68,30 @@ each volume element like a continuous stirred tank reactor (CSTR). Convection , 
 
 ![image](https://user-images.githubusercontent.com/29662579/128639317-29a7b18b-4b1b-433a-b042-53aadef1e4bc.png)
 
+
+Output files:
+
+# File naming convention for mat files.
+
+e.g test1_default_bc1_v1_c2
+
+{graph}_{mesh}_{boundary condition}_{no. of species in blood vessel}_{no. of species in cell}
+
+
+## Postprocessing
+
+
+Naming convection used: 
+advection diffusion: {species}_{tool}_{physics}
+
+species =  glc_ext/lac_ext/glc_cell/lac_cell
+tool = simgraph/comsol
+physics = ad/sink/' '/eq
+
+e.g.
+*  ad(advection diffusion) :  glc_ext_comosl_ad
+*  sink( irreversible) : glc_ext_comsol_sink
+*  ' ' (convection + diffusion + reaction): glc_ext_comsol
+* 	eq (convection + diffusion + reaction - blood vessel and cell have equal volumes): glc_ext_comsol_eq 
+* 	eqfull (convection + diffusion + reaction - blood vessel and cell have equal volumes): glc_ext_comsol_eqfull 
+*  full (convection + diffusion + reaction - blood vessel and cell have unequal volumes): glc_ext_comsol_full 
