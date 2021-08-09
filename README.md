@@ -73,6 +73,7 @@ each volume element like a continuous stirred tank reactor (CSTR). Convection , 
 
 #### Step 4: Simulation of static flow fields and transient concentration dynamics 
 
+Boundary conditions and the settings related to the choice of dynamic simulation can be modified in [settings_utils.m](https://github.com/DeepaMahm/simgraph/blob/main/input/settings_utils.m)
 
 
 ## Postprocessing
@@ -117,5 +118,4 @@ git clone https://github.com/deepamahm/simgraph.git
 ```
 cd simgraph/main
 main.exe input.xlsx settings_utils.m
-main.exe ..\filepath\input.xlsx ..\filepath\settings_utils.m
 ```
