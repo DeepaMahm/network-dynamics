@@ -103,4 +103,4 @@ e.g.
 *  full (convection + diffusion + reaction - blood vessel and cell have unequal volumes): glc_ext_comsol_full 
 
 
-All the 3D visulations are created via [manuscript_figures.py](ttps://github.com/DeepaMahm/simgraph/blob/main/postprocessing/manuscript_figures.py).
+The 3D visulations are created via [manuscript_figures.py](https://github.com/DeepaMahm/simgraph/blob/main/postprocessing/manuscript_figures.py).
