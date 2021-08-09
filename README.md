@@ -77,7 +77,7 @@ each volume element like a continuous stirred tank reactor (CSTR). Convection , 
 
 Output files:
 
-# File naming convention for mat files.
+* File naming convention for mat files.*
 
 e.g test1_default_bc1_v1_c2
 
