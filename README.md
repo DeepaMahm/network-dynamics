@@ -65,7 +65,7 @@ Each node in the blood vessel that is modelled is an approximation of a volume e
 each volume element like a continuous stirred tank reactor (CSTR). Convection , diffusion and reaction is modeled by writing mole balance equation for each volume element. The reaction nodes are highlighted in  green on the left image. Coupling between the donut element and the cylindrical volume element in the blood occurs at the green colored nodes. The bifurcation and trifurcation junctions are treated as spherical volume elements.
  
 <!--  ![A test image](domain.svg) -->
-<img src="https://github.com/DeepaMahm/simgraph/blob/main/domain.svg" width="700">
+<img src="https://github.com/DeepaMahm/simgraph/blob/main/docs/images/domain.svg" width="700">
 
 ![image](https://user-images.githubusercontent.com/29662579/128639317-29a7b18b-4b1b-433a-b042-53aadef1e4bc.png)
 
