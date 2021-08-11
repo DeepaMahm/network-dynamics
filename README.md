@@ -3,14 +3,13 @@
 
 ## Preprocessing: Preparing the input geometry
 
-Geometry required for solving the transport physics involves conversion of the 3D vascular geometry into a weighted graph. The format for specifying topology information of the graph is found in [input.xlsx](https://github.com/DeepaMahm/simgraph/tree/main/input).
-The specifics of the column fields provided in the excel sheet is detailed below.
+Preparing the geometry required for solving the transport physics involves conversion of the 3D vascular geometry into a weighted graph. The format for specifying topology information of the vascular network is found in [input.xlsx](https://github.com/DeepaMahm/simgraph/tree/main/input).
+The specifics of the column fields provided in the spreadsheet are detailed below.
 
 *****************************************************
 
 #### Step 1:   Original graph geomerty
-Represented as a graph formed by nodes and edges (or vessel segments). Nodes represent terminal ends or junctions at which
-n-furcation of blood vessels occur. The edges are oriented in the flow direction and each is formed by a tail (t) and head (h) node. The
+The reconstructed 3D volume of the microvasculatue is translated into a graph represented by nodes and edges (or vessel segments). Nodes represent terminal ends or junctions at which n-furcation of blood vessels occur. The edges are oriented in the direction of flow and each edge is formed by a tail (t) and head (h) node. The
 inputs required to form the weighted graph are:  
  
 Example: <br />
