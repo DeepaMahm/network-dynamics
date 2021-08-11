@@ -46,7 +46,7 @@ version of the vascular geometry.<br />
 
 * *volume_ratio and other extras (computed internally, not user defined)*	 <br />
 
-The topology data of four vasculatures studied in our work are available in the input spreadsheet. For carring out simulations with new vasculatures, add a new workbook and populate the topology information corresponding to the 11 fields mentioned in Step 1. Next, generate the data of the column fields mentioned in Step 2, using [read_mesh.py](https://github.com/DeepaMahm/simgraph/blob/main/preprocessing/read_mesh.py) which discretizes the domain via Gmsh library. The output saved in [data_model.xlsx](https://github.com/DeepaMahm/simgraph/blob/main/preprocessing/data_model.xlsx) can be copied and updated in the input spreadsheet prior to executing main.exe.
+The topology data of four vasculatures studied in our work are available in the input spreadsheet. For carring out simulations with new vasculatures, add a new workbook and populate the topology information corresponding to the 11 fields mentioned in Step 1. Next, generate the data of the first 5 column fields mentioned in Step 2, using [read_mesh.py](https://github.com/DeepaMahm/simgraph/blob/main/preprocessing/read_mesh.py) which discretizes the domain via Gmsh library. The output saved in [data_model.xlsx](https://github.com/DeepaMahm/simgraph/blob/main/preprocessing/data_model.xlsx) can be copied and updated in the input spreadsheet prior to executing main.exe.
 
 1. Run extract_subgraph to retain just one inlet and one outlet in the user-defined graph
 1. Update the network topology in input.xlsx 
