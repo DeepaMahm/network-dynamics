@@ -111,7 +111,6 @@ The 3D visualization are created via [manuscript_figures.py](https://github.com/
 
 ```
 git clone https://github.com/DeepaMahm/simgraph.git
-
 ```
 
 ###### Execution in MATLAB command line
