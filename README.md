@@ -110,7 +110,7 @@ The 3D visualization are created via [manuscript_figures.py](https://github.com/
 ###### Download 
 
 ```
-git clone https://github.com/deepamahm/simgraph.git
+git clone https://github.com/DeepaMahm/simgraph.git
 
 ```
 
