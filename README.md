@@ -63,7 +63,21 @@ The static flow field is computed by treating the vasculature as cylindrial netw
 
 #### Step 4: Simulation of static flow fields and transient concentration dynamics 
 
-Boundary conditions and the settings related to the choice of dynamic simulation (advection-dispersion physics or advection-dispersion-reaction physics) can be modified in [settings_utils.m](https://github.com/DeepaMahm/simgraph/blob/main/input/settings_utils.m)
+Boundary conditions and the user-defined settings related to the dynamic simulations (advection-dispersion physics or advection-dispersion-reaction physics) can be modified in the initialization file [input.ini](https://github.com/DeepaMahm/simgraph/blob/main/main/input.ini).
+
+
+To run static and dynamic simulations for capillary networks, please clone this repository and run the MATLAB executable [main.exe](https://github.com/DeepaMahm/simgraph/blob/main/main/main.exe).
+
+###### Download 
+
+```
+git clone https://github.com/DeepaMahm/simgraph.git
+```
+###### Execution in the command line of MATLAB
+```
+cd simgraph/main
+!main
+```
 
 Options available:
 
@@ -99,17 +113,4 @@ e.g.
 The 3D visualization are created via [manuscript_figures.py](https://github.com/DeepaMahm/simgraph/blob/main/postprocessing/manuscript_figures.py).
 
 
-###### Download 
-
-```
-git clone https://github.com/DeepaMahm/simgraph.git
-```
-To run static and dynamic simulations for capillary networks, please execute the following commands. User-defined inputs 
-are initialized in the input.ini file found [here](https://github.com/DeepaMahm/simgraph/blob/main/main/input.ini)
-
-###### Execution in the command line of MATLAB
-```
-cd simgraph/main
-!main
-```
 
