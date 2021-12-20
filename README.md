@@ -79,7 +79,33 @@ cd simgraph/main
 !main
 ```
 
-Options available:
+Options available for user-defined settings:
+* test_graph : 'test9'
+* tspan      : 0:0.0001:0.25
+* run        : struct('single', true, 'gscan', false, 'pscan', false, 'ascan', false, 'tspan', 0:0.0001:0.25, 'tend', 0.25);
+* pbc        : 'pbc2'
+* discretize : true
+* userdefined_qin : false
+* qin        : 1E+6 
+* model      : struct('vessel', true)
+* NVs        : 1
+* IC_Vspecies: struct('glc_ext', 5, 'lac_ext', 1.2, 'ins_ext', 1.7, 'cpep_ext', 1.7)
+* Vinf       : struct('glc_ext', 8, 'lac_ext', 3, 'ins_ext', 0, 'cpep_ext', 0)
+* IC_Cspecies: struct('glc', 0, 'lac',0)
+* rxn_set    : struct('degree_2',true)
+* rxn_vol    : struct('equal',  false)
+* transporter: struct('glc_ext', struct('Vm', 100, 'Km', 1.0), 'lac_ext', struct('Vm', 100, 'Km', 0.5))
+* Vspecies   : ["glc_ext", "lac_ext"]
+* NCs        : 2
+* Cspecies   : ["glc", "lac"]
+* diffusivity: struct('glc_ext', 5.46E4, 'lac_ext',7.71E4, 'ins_ext', 9.6E3, 'cpep_ext', 9.6E3)
+* glucose_scan  : 2:0.5:20
+* pressure_scan : 20:20:200
+* jpattern_set  : true
+* jacobian_set  : false
+* saveop_4julia : false
+
+
 
 ## Postprocessing
 
