@@ -104,10 +104,12 @@ The 3D visualization are created via [manuscript_figures.py](https://github.com/
 ```
 git clone https://github.com/DeepaMahm/simgraph.git
 ```
+To run static and dynamic simulations for capillary networks, please execute the following commands. User-defined inputs 
+are initialized in the input.ini file found [here](https://github.com/DeepaMahm/simgraph/blob/main/main/input.ini)
 
-###### Execution in MATLAB command line
+###### Execution in the command line of MATLAB
 ```
 cd simgraph/main
-main.exe input.xlsx settings_utils.m
+!main
 ```
 
